@@ -111,7 +111,7 @@ html.dark-mode figcaption {
   transition: all 0.3s ease;
   cursor: pointer;
 }
-   
+
 /* profile section */
 .profile{
 
@@ -254,6 +254,8 @@ html.dark-mode figcaption {
       border-radius: 7px;
       margin-bottom: 5px;
       text-decoration: none;
+     
+      
     }
 
     .icons{
@@ -341,13 +343,36 @@ html.dark-mode figcaption {
   transition: all 0.3s ease;
   cursor: pointer;
  }
- 
+
  /* skills section */
+ .container-skills{
+
+  height: auto;
+  max-width: 100%;
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background:#daddd8;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 10px 10px;
+  width: 35rem;
+}
+
+.container-skills:hover{
+  transform: scale(1.05);
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
 
 .skills{
   display: flex;
   justify-content: center;
   animation: 2s ease-out 0s 1 slideInFromLeft;
+ 
 
 }
 .skills h1{
@@ -383,6 +408,8 @@ html.dark-mode figcaption {
   font-weight: 800;
   text-transform: capitalize;
   animation: 2s ease-out 0s 1 slideInFromLeft;
+  
+  
 }
 
 .skill-list{
@@ -429,7 +456,7 @@ html.dark-mode figcaption {
   font-weight: 900;
   text-transform: uppercase;
   max-width: 800px;
-  margin: 2px 0;
+  margin: 5px 0;
   
 }
 
@@ -711,7 +738,42 @@ footer p{
     text-align: center;
     align-items: center;
     display: flex;
-    
+  }
+  .container-skills{
+
+    height: auto;
+    max-width: 100%;
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background:#daddd8;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px 10px;
+    width: 30rem;
+  }   
+}
+@media(max-width:800px){
+
+  .container-skills{
+
+    height: auto;
+    max-width: 100%;
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background:#daddd8;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    margin-top: 40px;
+    margin-bottom: 40px;
+    padding: 10px 10px;
+    width: 25rem;
+  }   
 }
 @media(max-width:476px){
   .ico {
@@ -767,6 +829,21 @@ footer p{
   background-color: transparent;  
   margin-right: 30px;
   margin-bottom: 1px;
+}
+.container-skills{
+  height: auto;
+  max-width: 100%;
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background:#daddd8;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 8px 8px;
+  width: 20rem;
 }
 }
 @media(max-width:370px){
@@ -832,8 +909,21 @@ footer p{
   animation: 2s ease-out 0s 1 slideInFromLeft;
   
 }
-
-
+.container-skills{
+  height: auto;
+  max-width: 100%;
+  backdrop-filter: blur( 10px );
+  -webkit-backdrop-filter: blur( 10px );
+  border-radius: 10px;
+  border: 1px solid rgba( 255, 255, 255, 0.18 );
+  background:#daddd8;
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 8px 8px;
+  width: 20rem;
 }
 
 }
+
