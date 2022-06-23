@@ -1,0 +1,255 @@
+.project-cards-container {
+  background: #C8A300;
+  padding: 4em 2em;
+}
+
+.project-cards-container .grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 100%;
+  margin: auto;
+  max-width: 1200px;
+  row-gap: 3em;
+}
+
+.project-cards-container .projcard-title a {
+  font-size: 1em;
+  color: #212121;
+  text-decoration: none;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.project-cards-container .projcard-title a:hover {
+  text-decoration: underline;
+}
+
+.project-cards-container .projcard-subtitle {
+  color: #888;
+ 
+}
+
+.project-cards-container .projcard {
+  background-color: #fff;
+  font-size: 18px;
+  -webkit-box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+          box-shadow: 0 4px 21px -12px rgba(0, 0, 0, 0.66);
+  -webkit-transition: -webkit-box-shadow 0.2s ease, -webkit-transform 0.2s ease;
+  transition: -webkit-box-shadow 0.2s ease, -webkit-transform 0.2s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease;
+  transition: box-shadow 0.2s ease, transform 0.2s ease, -webkit-box-shadow 0.2s ease, -webkit-transform 0.2s ease;
+  overflow: hidden;
+  font-family: 'Voces', 'Open Sans', arial, sans-serif;
+}
+
+.project-cards-container .projcard:hover {
+  -webkit-box-shadow: 0 34px 32px -33px rgba(0, 0, 0, 0.18);
+          box-shadow: 0 34px 32px -33px rgba(0, 0, 0, 0.18);
+  -webkit-transform: translate(0px, -3px);
+          transform: translate(0px, -3px);
+}
+
+.project-cards-container .projcard:hover .projcard-img {
+  -webkit-transform: scale(1.05) rotate(1deg);
+          transform: scale(1.05) rotate(1deg);
+}
+
+.project-cards-container .projcard-img {
+  -webkit-transition: -webkit-transform 0.2s ease;
+  transition: -webkit-transform 0.2s ease;
+  transition: transform 0.2s ease;
+  transition: transform 0.2s ease, -webkit-transform 0.2s ease;
+}
+
+.project-cards-container .project-roles {
+  color: #888;
+  font-size: 1.2em;
+  padding: .1em 0;
+}
+
+.project-cards-container .project-roles a {
+  text-transform: capitalize;
+  color: #888;
+  text-decoration: none;
+  font-size: 0.7em;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.project-cards-container .project-roles a:hover {
+  text-decoration: underline;
+}
+
+.project-cards-container .projcard-description {
+  font-size: 0.8em;
+  color: #424242;
+  font-weight: 600;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.project-cards-container .projcard:hover .projcard-bar {
+  width: 70px;
+}
+
+.project-cards-container .projcard-bar {
+  left: -2px;
+  width: 50px;
+  height: 5px;
+  margin: 10px 0;
+  border-radius: 5px;
+  background-color: #424242;
+  -webkit-transition: width 0.2s ease;
+  transition: width 0.2s ease;
+}
+
+@media (min-width: 1060px) {
+  .project-cards-container .projcard-container,
+  .project-cards-container .projcard-container * {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+  }
+  .project-cards-container .projcard {
+    position: relative;
+    width: 100%;
+    height: 350px;
+  }
+  .project-cards-container .projcard::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-image: linear-gradient(-70deg, #424242, transparent 50%);
+    opacity: 0.07;
+  }
+  .project-cards-container .projcard:nth-child(2n)::before {
+    background-image: linear-gradient(-250deg, #424242, transparent 50%);
+  }
+  .project-cards-container .projcard-innerbox {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+  }
+  .project-cards-container .projcard-img {
+    position: absolute;
+    height: 350px;
+    width: 400px;
+    top: 0;
+    left: 0;
+  }
+  .project-cards-container .projcard.img-right .projcard-img {
+    left: initial;
+    right: 0;
+  }
+  .project-cards-container .projcard-textbox {
+    position: absolute;
+    top: 7%;
+    bottom: 7%;
+    left: 430px;
+    width: calc(100% - 470px);
+    font-size: 17px;
+  }
+  .project-cards-container .projcard.img-right .projcard-textbox {
+    left: initial;
+    right: 430px;
+  }
+  .project-cards-container .projcard-textbox::before,
+  .project-cards-container .projcard-textbox::after {
+    content: "";
+    position: absolute;
+    display: block;
+    background: #F4C600;
+    background: #fff;
+    top: -20%;
+    left: -55px;
+    height: 140%;
+    width: 60px;
+    -webkit-transform: rotate(8deg);
+            transform: rotate(8deg);
+  }
+  .project-cards-container .projcard.img-right .projcard-textbox::before {
+    display: none;
+  }
+  .project-cards-container .projcard-textbox::after {
+    display: none;
+    left: initial;
+    right: -55px;
+  }
+  .project-cards-container .projcard.img-right .projcard-textbox::after {
+    display: block;
+  }
+  .project-cards-container .projcard-textbox * {
+    position: relative;
+  }
+  .project-cards-container .projcard-description {
+    height: 225px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+  }
+  .project-cards-container .project-links {
+    position: absolute;
+    bottom: 3%;
+    font-size: 0.8em;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .project-cards-container .project-links a {
+    cursor: pointer;
+    display: inline-block;
+    background: #6C0ACE;
+    color: #fff;
+    border-radius: 3px 0 0 3px;
+    line-height: 26px;
+    padding: 0 12px 0 14px;
+    position: relative;
+    margin-right: 20px;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    text-decoration: none;
+    border-radius: 1vmax;
+  }
+  .project-cards-container .project-links a:hover {
+    background: #F4C600;
+    color: black;
+   
+  }
+  .project-cards-container .project-links a:hover::after {
+    border-left: 10px solid #bb083b;
+  }
+
+}
+
+@media (max-width: 1060px) {
+  .project-cards-container div.projcard {
+    margin: 0;
+  }
+  .project-cards-container .grid-container {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    width: 100%;
+    -webkit-column-gap: 3em;
+            column-gap: 3em;
+  }
+  .project-cards-container .projcard-img {
+    width: 100%;
+    height: auto;
+  }
+  .project-cards-container article.projcard-container {
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .project-cards-container .projcard-textbox {
+    padding: 15px;
+    min-height: 360px;
+  }
+}
+/*# sourceMappingURL=cards.css.map */
