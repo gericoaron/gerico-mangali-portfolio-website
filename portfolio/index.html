@@ -1,320 +1,182 @@
-<!-- Gerico Mangali | Junior Web Developer Intern | Frontend | Padayon --> 
-
-                                                <!-- READ ME -->
-
-<!-- The ui/ux design is inspired to the youtuber bedimcode with his video "mini portfolio website". this project is 
-created for personal portfolio purposes, as you explore the codes, the approach is very different to what he used in the 
-video, because as I mentioned I only use the video for getting inspirations because I like the minimalist and 
-aesthetic theme of the design -->
-
-                                                <!-- CREDITS -->
-<!-- all of the approached use in this project came via internet or website references: 
-for ui design - bedimcode for fonts,icons,effects,themes,etc: google fonts, font awesome, remix icon, 
-stackoverflow,bootstrap, w3s, codepen, instagram(webdesignuniversity), youtube, google, 9elements.github.io etc. 
-for the things I do forgot to give the credits here thank you! -->
-
-                                                <!-- ADDITIONAL -->
-<!-- I did not use themes for the dark mode of the project, see reference here:
-https://dev.to/ekaterina_vu/dark-mode-with-one-line-of-code-4lkm so you understand much clearly 
-this portfolio project is created and hardcoded using html,css, some js, css framework : bootstrap , with
-the help of the mentioned references above via credits-->
-
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <!-- meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- font links used -->
-    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&family=Righteous&family=Rubik:wght@300;400;500;700&family=Sniglet&display=swap"rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;1,600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,900&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,400;0,500;0,600;1,600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,900&display=swap" rel="stylesheet">
-    <!-- remix icon link -->
-    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
-    <!-- bootstrap link -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <!-- popperjs -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"crossorigin="anonymous"></script>
-    <!-- fontawesome link -->
-    <script src="https://kit.fontawesome.com/81f8329302.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+     <!-- font links used -->
 
-    <title>Gmangali's Portfolio</title>
-
-    <!-- css style link -->
-    <link rel="stylesheet" href="../portfolio/styles/index.css">
-   
+     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Oswald:wght@200;300;400;500;600;700&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500&family=Righteous&family=Rubik:wght@300;400;500;700&family=Sniglet&display=swap"rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,400;0,500;0,600;1,600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,900&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,700;1,400&family=Josefin+Sans:ital,wght@0,400;0,500;0,600;1,600&family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,900&display=swap" rel="stylesheet">
+     <!-- remix icon link -->
+     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
+     <!-- bootstrap link -->
+     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <!-- popperjs -->
+     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js"integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB"crossorigin="anonymous"></script>
+     <!-- fontawesome link -->
+     <script src="https://kit.fontawesome.com/81f8329302.js" crossorigin="anonymous"></script>
+     <!-- bootstrap -->
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+     <!-- external css -->
+     <link rel="stylesheet" href="index.css">
+     <link rel="stylesheet" href="cards.css">
 </head>
-
-
-  
-<header>
-   
-    <!-- toggle darkmode/lightmode -->
-    <button class="btn"><i class="ri-sun-line tog"></i></button>
-
-    <!-- container -->
-    <div class="container">
-
-        <!-- profile image -->
-        <div class="profile">
-            <img src="images/me.png">
-        </div>
-        <!-- profile name -->
-        <div class="title">
-            <h1>Gerico Mangali</h1>
-        </div>
-        <!-- profile sub-text -->
-        <div class="sub-title">
-            <p>Web Developer | Web Designer</p>
-        </div>
-        <div class="pnumber">
-            <i class="ri-checkbox-circle-line icon"></i>
-            <p>09077798496</p>
-            
-        </div>
-        
-        <!-- social links/references -->
-        <div class="links">
-            <ul>
-                <a href="https://facebook.com/gericoaron02" target="_blank">
-                    <li class="list"><i class="ri-facebook-circle-line ico"></i></a></li>
-
-                <a href="https://instagram.com/gericoaron" target="_blank">
-                    <li class="list"><i class="ri-instagram-line ico"></i></a></li>
-
-                <a href="https://github.com/gericoaron" target="_blank">
-                    <li class="list"><i class="ri-github-line ico"></i></a></li>
-
-                <a href="https://stackoverflow.com/gericoaron" target="_blank">
-                    <li class="list"><i class="ri-linkedin-box-line ico"></i></a></li>
-
-                <a href="https://gitlab.com/gmangali" target="_blank">
-                    <li class="list"><i class="ri-mail-send-line ico"></i></a></li>
-            </ul>
-        </div>
-
-        <!-- CV download button & button for contacting -->
-        <div class="buttons">
-            <ul>
-                <a href="files/GMResume-2022.pdf" target="_blank">
-                    <li class="list">
-                        <button class="button" style="vertical-align:middle">Download CV</button>
-                    </li>
-                </a>
-                
-                <a href="https://m.me/gericoaron02" target="_blank">
-                    <li class="list">
-                        <i class="ri-messenger-line ico"></i>
-                    </li>
-                </a>
-
-                <a href="https://web.telegram.org/gericoaron02" target="_blank">
-                    <li class="list">
-                        <i class="ri-whatsapp-line ico"></i>
-                    </li>
-                </a>
-            </ul>
-        </div>
-
-        <!-- drop button go to skills section -->
-        <div class="drop">
-            <a href="#skills"><i class="ri-arrow-down-circle-line icons"></i></a>
-        </div>
-    </div>
-
-</header>
-<!-- body starts here -->
 <body>
-    <!-- gray line section dividers -->
-    <hr>
-    <!-- skills section -->
-    <div class="skills" id="skills">
-        <h1>Skills</h1>
+    <header>
+    <div class="heading">
+      <div class="logo">
+        <h1>geri.co<span class="com">m</span></h1>
+      </div>
     </div>
-    <!-- skills subtext -->
-    <div class="skills-subtitle">
-        <p>Coming soon!</p>
-    </div>
-    <!-- list of skills -->
-    <div class="skill-list">
-        
-        <ul>
-        
-            <div class="container-skills">
-                <i class="ri-checkbox-circle-line icon"></i>
-                <li class="listed-skill">
-                <i class="fa-brands fa-html5 ico"></i>
-                    
-                    <h1>html5</h1>
-                    <p>Intermediate</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis maxime, ipsam, obcaecati p distinctio adipisci assumenda odit quaerat numquam, alias tenetur perspiciatis a nobis labore voluptatem ea est, voluptas optio? Tempora, unde, quo laboriosam porro assumenda minima, aliquam quam voluptas repudiandae qui amet sunt. Nobis!</p>
-                </li>
-            </div>
-
-            <div class="container-skills">
-                <i class="ri-checkbox-circle-line icon"></i>
-                <li class="listed-skill">
-                    <i class="fa-brands fa-css3-alt ico"></i>
-                <h1>CSS3</h1>
-                <p>Advance</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis maxime, ipsam, obcaecati placeat culpa repellendus quaerat, similique dolore maiores illum asperiores ex sapiente at nam? Mollitia deleniti excepturi distinctio adipisci assumenda odit quaerat numquam, alias tenetur perspiciatis a nobis labore voluptatem ea est, voluptas optio? Tempora, unde, quo laboriosam porro assumenda minima, aliquam quam voluptas repudiandae qui amet sunt. Nobis!</p>
-            </li>
-            </div>
-
-            <div class="container-skills">
-                <i class="ri-checkbox-circle-line icon"></i>
-                <li class="listed-skill">
-                <i class="fa-brands fa-js-square ico"></i>
-                <h1>javascript</h1>
-                <p>Beginner</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis maxime, ipsam, obcaecati placeat culpa repellendus quaerat, similique dolore maiores illum asperiores ex sapiente at nam? Mollitia deleniti excepturi distinctio adipisci assumenda odit quaerat numquam, alias tenetur perspiciatis a nobis labore voluptatem ea est, voluptas optio? Tempora, unde, quo laboriosam porro assumenda minima, aliquam quam voluptas repudiandae qui amet sunt. Nobis!</p>
-            </li>
-            </div>
-
-            <div class="container-skills">
-                <i class="ri-checkbox-circle-line icon"></i>
-                <li class="listed-skill">
-                    <i class="fa-brands fa-git-alt ico"></i>
-                <h1>git</h1>
-                <p>Beginner</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis maxime, ipsam, obcaecati placeat culpa repellendus quaerat, similique dolore maiores illum asperiores ex sapiente at nam? Mollitia deleniti excepturi distinctio adipisci assumenda odit quaerat numquam, alias tenetur perspiciatis a nobis labore voluptatem ea est, voluptas optio? Tempora, unde, quo laboriosam porro assumenda minima, aliquam quam voluptas repudiandae qui amet sunt. Nobis!</p>
-            </li>
-            </div>
-
-            <div class="container-skills">
-                <i class="ri-checkbox-circle-line icon"></i>
-                <li class="listed-skill">
-                    <i class="fa-brands fa-bootstrap ico"></i>
-                <h1>bootstrap</h1>
-                <p>Advance</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis maxime, ipsam, obcaecati placeat culpa repellendus quaerat, similique dolore maiores illum asperiores ex sapiente at nam? Mollitia deleniti excepturi distinctio adipisci assumenda odit quaerat numquam, alias tenetur perspiciatis a nobis labore voluptatem ea est, voluptas optio? Tempora, unde, quo laboriosam porro assumenda minima, aliquam quam voluptas repudiandae qui amet sunt. Nobis!</p>
-            </li>
-            </div>
-
-            <div class="container-skills">
-                <i class="ri-checkbox-circle-line icon"></i>
-                <li class="listed-skill">
-                    <i class="fa-brands fa-aws ico"></i>
-                <h1>amazon web</h1>
-                <p>Beginner</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis maxime, ipsam, obcaecati placeat culpa repellendus quaerat, similique dolore maiores illum asperiores ex sapiente at nam? Mollitia deleniti excepturi distinctio adipisci assumenda odit quaerat numquam, alias tenetur perspiciatis a nobis labore voluptatem ea est, voluptas optio? Tempora, unde, quo laboriosam porro assumenda minima, aliquam quam voluptas repudiandae qui amet sunt. Nobis!</p>
-            </li>
-            </div>
-
-            <div class="container-skills">
-                <i class="ri-checkbox-circle-line icon"></i>
-                <li class="listed-skill">
-                    <i class="fa-brands fa-php ico"></i>
-                <h1>php</h1>
-                <p>Beginner</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis maxime, ipsam, obcaecati placeat culpa repellendus quaerat, similique dolore maiores illum asperiores ex sapiente at nam? Mollitia deleniti excepturi distinctio adipisci assumenda odit quaerat numquam, alias tenetur perspiciatis a nobis labore voluptatem ea est, voluptas optio? Tempora, unde, quo laboriosam porro assumenda minima, aliquam quam voluptas repudiandae qui amet sunt. Nobis!</p>
-            </li>
-            </div>
-
-            <div class="container-skills">
-                <i class="ri-checkbox-circle-line icon"></i>
-                <li class="listed-skill">
-                    <i class="fa-brands fa-laravel ico"></i>
-                <h1>laravel</h1>
-                <p>Beginner</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis maxime, ipsam, obcaecati placeat culpa repellendus quaerat, similique dolore maiores illum asperiores ex sapiente at nam? Mollitia deleniti excepturi distinctio adipisci assumenda odit quaerat numquam, alias tenetur perspiciatis a nobis labore voluptatem ea est, voluptas optio? Tempora, unde, quo laboriosam porro assumenda minima, aliquam quam voluptas repudiandae qui amet sunt. Nobis!</p>
-            </li>
-            </div>
-
-            <div class="container-skills">
-                <i class="ri-checkbox-circle-line icon"></i>
-                <li class="listed-skill">
-                    <i class="fa-brands fa-react ico"></i>
-                <h1>react</h1>
-                <p>Beginner</p>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis maxime, ipsam, obcaecati placeat culpa repellendus quaerat, similique dolore maiores illum asperiores ex sapiente at nam? Mollitia deleniti excepturi distinctio adipisci assumenda odit quaerat numquam, alias tenetur perspiciatis a nobis labore voluptatem ea est, voluptas optio? Tempora, unde, quo laboriosam porro assumenda minima, aliquam quam voluptas repudiandae qui amet sunt. Nobis!</p>
-            </li>
-            </div>
-
-        </ul>
-      
-    </div>
-    <!-- drop button go to projects section -->
-    <div class="drop">
-        <a href="#projects"><i class="ri-arrow-down-circle-line icons"></i></a>
-    </div>
-    <!-- gray line section dividers -->
-    <hr>
-    <!-- projects section -->
-    <div class="projects" id="projects">
-        <h1>Projects</h1>
-    </div>
-    <!-- projects subtext -->
-    <div class="projects-subtitle">
-        <p>Coming soon!</p>
-    </div>
-    <!-- projects list starts here -->
-    <div class="projects-list">
-        <!-- first div column for seperations | two column layout intended here -->
-        <div class="column">
-            <!-- first card sample -->
-            <figure class="cards">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample108.jpg" alt="sample108" />
-                    <figcaption>
-                        <h3>Coming soon!</h3>
-                        <p>Coming soon!</p>
-                    </figcaption>
-                <a href="#"></a>
-            </figure>
-            <!-- second card sample -->
-            <figure class="cards">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample101.jpg" alt="sample101" />
-                    <figcaption>
-                        <h3>Coming soon!</h3>
-                        <p>Coming soon! </p>
-                    </figcaption>
-                <a href="#"></a>
-            </figure>
-        <!-- first column div ending tag -->
+    <!-- hero -->
+    <div class="hero">
+        <div class="title">
+        <h1>welcome to my world, come and take a look around!
+        </h1>
+         <a href="#projects-way" class="buttonhero"> Read More </a>
         </div>
-
-        <!--second div column for seperations | two column layout intended here -->
-        <div class="column">
-            <!-- third card sample -->
-            <figure class="cards">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample101.jpg" alt="sample101" />
-                    <figcaption>
-                        <h3>Coming soon!</h3>
-                        <p>Coming soon! </p>
-                    </figcaption>
-                <a href="#"></a>
-            </figure>
-            <!-- fourth card sample -->
-            <figure class="cards">
-                <img src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/331810/sample101.jpg" alt="sample101" />
-                    <figcaption>
-                        <h3>Coming soon!</h3>
-                        <p>Coming soon! </p>
-                    </figcaption>
-                <a href="#"></a>
-            </figure>
-        <!-- second column div ending tag -->
-        </div>
-    <!-- project list ending div tag -->
     </div>
+    </header>
+    <!-- way to projects -->
+    <div id="projects-way">
+      <div class="title-project">
+        <h1>Hey!, I wanna give you a heart because you don't stop
+          looking at my work til now.
+        </h1>
+        <a href="#project-list" class="buttonhero"> Look More </a>
+      </div>
+    </div>
+    <!-- project lists-->
+    <div id="project-list">
+      <div class="title-project-list">
+        <h1> I use to built simple frontend projects using 
+          HTML5, CSS3, Javascript.
+        </h1>
+        <a href="#project-one" class="buttonhero"> Recent Project </a>
+      </div>
+    </div>
+
+   <!-- cards -->
+<div class="project-cards-container">
+
+  <div class="grid-container">
+
+    <article id="project-one" class="projcard-container">
+      <div class="projcard projcard-blue img-right">
+        <div class="projcard-innerbox">
+          <img width="800" height="700" src="login.png"
+            class="projcard-img wp-post-image jetpack-lazy-image jetpack-lazy-image--handled" alt="" size="large">
+          <div class="projcard-textbox">
+            <div class="projcard-title"><a href="#">Piso Kitchen Login</a>
+            </div>
+            <div class="project-roles">
+              <a href="" rel="tag">designer</a>, 
+              <a href="" rel="tag">frontend developer</a>, 
+              <a href="" rel="tag">engineer</a>
+            </div>
+            <div class="projcard-bar" style="background-color: #F4C600"></div>
+            <div class="projcard-description">
+
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi praesentium ut asperiores ab, velit
+                provident sint accusamus laudantium. Incidunt facilis eaque sint, aliquam natus assumenda porro minima
+                dolore in deserunt.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi praesentium ut asperiores ab, velit
+                provident sint accusamus laudantium. Incidunt facilis eaque sint, aliquam natus assumenda porro minima
+                dolore in deserunt.
+              </p>
+
+
+              <p class="project-links">
+                <a href="#">internal project</a>
+                <a href="#">login page</a>
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="project-one" class="projcard-container">
+      <div class="projcard projcard-blue img-right">
+        <div class="projcard-innerbox">
+          <img width="800" height="700" src="orderstats.PNG"
+            class="projcard-img wp-post-image jetpack-lazy-image jetpack-lazy-image--handled" alt="" size="large">
+          <div class="projcard-textbox">
+            <div class="projcard-title"><a href="#">Piso Kitchen Order Status | Data tables</a>
+            </div>
+            <div class="project-roles">
+              <a href="" rel="tag">designer</a>, 
+              <a href="" rel="tag">frontend developer</a>, 
+              <a href="" rel="tag">engineer</a>
+            </div>
+            <div class="projcard-bar" style="background-color: #F4C600"></div>
+            <div class="projcard-description">
+
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi praesentium ut asperiores ab, velit
+                provident sint accusamus laudantium. Incidunt facilis eaque sint, aliquam natus assumenda porro minima
+                dolore in deserunt.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi praesentium ut asperiores ab, velit
+                provident sint accusamus laudantium. Incidunt facilis eaque sint, aliquam natus assumenda porro minima
+                dolore in deserunt.
+              </p>
+
+
+              <p class="project-links">
+                <a href="#">internal project</a>
+                <a href="#">login page</a>
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <article id="project-one" class="projcard-container">
+      <div class="projcard projcard-blue img-right">
+        <div class="projcard-innerbox">
+          <img width="800" height="700" src="shop.PNG"
+            class="projcard-img wp-post-image jetpack-lazy-image jetpack-lazy-image--handled" alt="" size="large">
+          <div class="projcard-textbox">
+            <div class="projcard-title"><a href="#">Piso Kitchen Shop | Add to cart</a>
+            </div>
+            <div class="project-roles">
+              <a href="" rel="tag">designer</a>, 
+              <a href="" rel="tag">frontend developer</a>, 
+              <a href="" rel="tag">engineer</a>
+            </div>
+            <div class="projcard-bar" style="background-color: #F4C600"></div>
+            <div class="projcard-description">
+
+              <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi praesentium ut asperiores ab, velit
+                provident sint accusamus laudantium. Incidunt facilis eaque sint, aliquam natus assumenda porro minima
+                dolore in deserunt.
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Animi praesentium ut asperiores ab, velit
+                provident sint accusamus laudantium. Incidunt facilis eaque sint, aliquam natus assumenda porro minima
+                dolore in deserunt.
+              </p>
+
+
+              <p class="project-links">
+                <a href="#">internal project</a>
+                <a href="#">login page</a>
+              </p>
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+  </div>
+</div>
+ 
     
 </body>
-<!-- footer starts here -->
-<footer>
-<!-- gray line section dividers -->
-<hr>
-    <!-- footer div id -->
-    <div id="social-media">
-        <!-- footer credits -->
-        <p> &copy;
-            <script>document.write(new Date().getFullYear());</script> created by gerico mangali.
-        </p>
-    </div>
-</footer>
-<!-- footer ends here -->
-<!-- script tag link -->
-<script src="../portfolio/scripts/index.js"></script>
 </html>

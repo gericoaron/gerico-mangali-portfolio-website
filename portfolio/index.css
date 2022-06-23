@@ -1,0 +1,435 @@
+@font-face {
+    font-family: FreeSansBold;
+    src: url(font/FreeSansBold.ttf);
+  }
+
+* {
+    box-sizing: border-box;
+    outline: 0;
+    outline-style: none;
+    text-decoration: none;
+}
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: #F4C600;
+}
+.heading{
+    background-color: transparent;
+    position: fixed;
+    display: flex;
+  
+}
+
+.logo{
+    padding: 1rem;
+    
+}
+
+.logo h1{
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 700;
+    
+}
+.com{
+    font-size: 1.5rem;
+    color: rgb(108, 81, 206);
+    font-weight: 700;
+}
+/* hero */
+
+.hero{
+    height: 100vh;
+    background-image: url('bg.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+
+.title{
+    float: right;
+    width: 60%;
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    padding: 8em;
+}
+.buttonhero{
+    float: right;
+    font-size: 0.8em;
+    padding: 1em;
+    border: none;
+    border-radius: 50vmax;
+    margin: 3em;
+    width: 10em;
+    background: rgb(108, 81, 206);
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 700;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+}
+
+.buttonhero:hover{
+    transform: scale(1.2);
+    color: #000;
+    background: #FFF;
+    transition: all .4s ease-in-out;
+}
+.title h1{
+    text-align: left;
+    font-size: 4.5em;
+    line-height: 0.8em;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+.imagetitle img{
+    height: 100vh;
+    width: auto;
+
+}
+/* projects */
+#projects-way{
+    height: 100vh;
+    background-image: url('bg2.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.title-project{
+    float: left;
+    width: 60%;
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    padding: 8em;
+}
+.title-project h1{
+    text-align: left;
+    font-size: 3em;
+    line-height: 0.9em;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* project list */
+#project-list{
+    height: 100vh;
+    background-image: url('bg3.png');
+    background-repeat: no-repeat;
+    background-size: 100%;
+}
+.title-project-list{
+    float: right;
+    width: 60%;
+    align-items: center;
+    display: inline-block;
+    justify-content: center;
+    padding: 8em;
+}
+.title-project-list h1{
+    text-align: left;
+    font-size: 3em;
+    line-height: 1em;
+    font-family: 'DM Sans', sans-serif;
+    color: white;
+    font-weight: 600;
+}
+
+
+/* contact */
+#contact{
+    height: 100vh;
+}
+/* media */
+
+@media(max-width: 1280px){
+
+    .title{
+        float: right;
+        width: 60%;
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        padding: 7em;
+    }
+    .buttonhero{
+        float: right;
+        font-size: 0.7em;
+        padding: 0.8em;
+        color: white;
+        border: none;
+        border-radius: 50vmax;
+        margin: 2em;
+        width: 8em;
+        background-color: rgb(108, 81, 206);
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+        
+    }
+    .buttonhero:hover{
+        transform: scale(1.1);
+        background: #FFF;
+        color: #000;
+        transition: all .4s ease-in-out;
+    }
+    .title h1{
+        text-align: left;
+        font-size: 3.8em;
+        line-height: 0.8em;
+        font-family: 'DM Sans', sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 961px){
+    .title{
+        float: right;
+        width: 60%;
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        padding: 7em;
+    }
+    .buttonhero{
+        float: right;
+        font-size: 0.7em;
+        padding: 0.8em;
+        color: white;
+        border: none;
+        border-radius: 50vmax;
+        margin: 2em;
+        width: 8em;
+        background-color: rgb(108, 81, 206);
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+        
+    }
+    .buttonhero:hover{
+        transform: scale(1.1);
+        background: #FFF;
+        color: #000;
+        transition: all .4s ease-in-out;
+    }
+    .title h1{
+        text-align: left;
+        font-size: 3.4em;
+        line-height: 0.8em;
+        font-family: 'DM Sans', sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 941px){
+    .title{
+        float: right;
+        width: 70%;
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        padding: 7em;
+    }
+    .buttonhero{
+        float: right;
+        font-size: 0.7em;
+        padding: 0.8em;
+        color: white;
+        border: none;
+        border-radius: 50vmax;
+        margin: 2em;
+        width: 8em;
+        background-color: rgb(108, 81, 206);
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+        
+    }
+    .buttonhero:hover{
+        transform: scale(1.1);
+        background: #FFF;
+        color: #000;
+        transition: all .4s ease-in-out;
+    }
+    .title h1{
+        text-align: left;
+        font-size: 3em;
+        line-height: 0.8em;
+        font-family: 'DM Sans', sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 929px){
+    .logo{
+        padding: 0.8rem;
+        
+    }
+    
+    .logo h1{
+        font-size: 1rem;
+        color: white;
+        font-weight: 700;
+        
+    }
+    .com{
+        font-size: 1rem;
+        color: rgb(108, 81, 206);
+        font-weight: 700;
+    }
+    .title{
+        float: right;
+        width: 70%;
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        padding: 6em;
+    }
+    .buttonhero{
+        float: right;
+        font-size: 0.6em;
+        padding: 0.8em;
+        color: white;
+        border: none;
+        border-radius: 50vmax;
+        margin: 2em;
+        width: 8em;
+        background-color: rgb(108, 81, 206);
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+        
+    }
+    .buttonhero:hover{
+        transform: scale(1.1);
+        background: #FFF;
+        color: #000;
+        transition: all .4s ease-in-out;
+    }
+    .title h1{
+        text-align: left;
+        font-size: 2em;
+        line-height: 0.8em;
+        font-family: 'DM Sans', sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+
+@media (max-width: 774px){
+    .logo{
+        padding: 0.8rem;
+        
+    }
+    
+    .logo h1{
+        font-size: 0.8rem;
+        color: white;
+        font-weight: 700;
+        
+    }
+    .com{
+        font-size: 0.8rem;
+        color: rgb(108, 81, 206);
+        font-weight: 700;
+    }
+    .title{
+        float: right;
+        width: 65%;
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        padding: 5em;
+    }
+    .buttonhero{
+        float: right;
+        font-size: 0.5em;
+        padding: 0.8em;
+        color: white;
+        border: none;
+        border-radius: 50vmax;
+        margin: 2em;
+        width: 8em;
+        background-color: rgb(108, 81, 206);
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+        
+    }
+    .buttonhero:hover{
+        transform: scale(1.1);
+        background: #FFF;
+        color: #000;
+        transition: all .4s ease-in-out;
+    }
+    .title h1{
+        text-align: left;
+        font-size: 1.7em;
+        line-height: 0.8em;
+        font-family: 'DM Sans', sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+}
+
+@media (max-width: 621px){
+
+    .logo{
+        padding: 0.6rem;
+        
+    }
+    
+    .logo h1{
+        font-size: 0.6rem;
+        color: white;
+        font-weight: 700;
+        
+    }
+    .com{
+        font-size: 0.6rem;
+        color: rgb(108, 81, 206);
+        font-weight: 700;
+    }
+
+    .title{
+        float: right;
+        width: 70%;
+        align-items: center;
+        display: inline-block;
+        justify-content: center;
+        padding: 4em;
+    }
+    .buttonhero{
+        float: right;
+        font-size: 0.4em;
+        padding: 0.8em;
+        color: white;
+        border: none;
+        border-radius: 50vmax;
+        margin: 1em;
+        width: 8em;
+        background-color: rgb(108, 81, 206);
+        font-family: 'DM Sans', sans-serif;
+        font-weight: 600;
+        
+    }
+    .buttonhero:hover{
+        transform: scale(1.1);
+        background: #FFF;
+        color: #000;
+        transition: all .4s ease-in-out;
+    }
+    .title h1{
+        text-align: left;
+        font-size: 1.3em;
+        line-height: 0.8em;
+        font-family: 'DM Sans', sans-serif;
+        color: white;
+        font-weight: 600;
+    }
+}
