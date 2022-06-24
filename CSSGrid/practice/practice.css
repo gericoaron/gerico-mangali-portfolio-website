@@ -1,0 +1,241 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.ico{
+    color: #fd1d1d;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+h1{
+    font-family: 'Raleway', sans-serif;
+      margin: 10px 20px;
+}
+header{
+    margin-bottom: 20px;
+    
+}
+p {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    color: white;
+    align-items: center;
+    margin: 10px 20px;
+}
+#pills-tab{
+    margin:15px auto;
+
+}
+.nav{
+    
+    color: #17171f;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+}
+
+.nav button{
+    color: white;
+}
+
+
+body{
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.com/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1881%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='url(%23SvgjsLinearGradient1882)'%3e%3c/rect%3e%3cpath d='M248.843%2c454.046C305.975%2c450.572%2c337.684%2c393.481%2c363.983%2c342.642C387.478%2c297.223%2c405.322%2c244.868%2c380.046%2c200.416C354.549%2c155.575%2c300.414%2c139.054%2c248.843%2c140.146C199.386%2c141.193%2c153.94%2c164.337%2c126.92%2c205.774C96.893%2c251.822%2c82.358%2c308.951%2c106.59%2c358.295C133.594%2c413.284%2c187.694%2c457.765%2c248.843%2c454.046' fill='rgba(11%2c 13%2c 12%2c 0.33)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M655.777%2c193.866C676.545%2c192.799%2c689.564%2c173.949%2c699.902%2c155.906C710.157%2c138.008%2c719.324%2c117.518%2c710.091%2c99.072C700.065%2c79.041%2c678.174%2c67.359%2c655.777%2c67.748C634.005%2c68.126%2c615.365%2c81.956%2c604.634%2c100.903C594.07%2c119.555%2c592.699%2c142.102%2c603.032%2c160.883C613.745%2c180.356%2c633.581%2c195.006%2c655.777%2c193.866' fill='rgba(11%2c 13%2c 12%2c 0.33)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M947.2 76.81 a176.15 176.15 0 1 0 352.3 0 a176.15 176.15 0 1 0 -352.3 0z' fill='rgba(11%2c 13%2c 12%2c 0.33)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M706.9937577413988-33.8463780716272L633.8008569979065 19.331377066595152 686.9786121361288 92.52427781008745 760.1715128796211 39.3465226718651z' fill='rgba(11%2c 13%2c 12%2c 0.33)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M427.951%2c465.765C456.258%2c466.164%2c482.023%2c451.589%2c497.581%2c427.937C515.046%2c401.386%2c525.474%2c368.097%2c510.707%2c339.956C495.092%2c310.198%2c461.505%2c293.38%2c427.951%2c295.242C397.107%2c296.954%2c373.678%2c320.784%2c359.708%2c348.336C347.153%2c373.097%2c347.693%2c402.016%2c361.642%2c426.019C375.52%2c449.899%2c400.334%2c465.375%2c427.951%2c465.765' fill='rgba(11%2c 13%2c 12%2c 0.33)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M821.3 166.72 a151.97 151.97 0 1 0 303.94 0 a151.97 151.97 0 1 0 -303.94 0z' fill='rgba(11%2c 13%2c 12%2c 0.33)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M1027.0967161811207 162.39873001175422L992.5473890403362 300.9685125745052 1131.1171716030872 335.5178397152897 1165.6664987438717 196.94805715253872z' fill='rgba(11%2c 13%2c 12%2c 0.33)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M422.08 325.14 a99.64 99.64 0 1 0 199.28 0 a99.64 99.64 0 1 0 -199.28 0z' fill='rgba(11%2c 13%2c 12%2c 0.33)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M972.119%2c644.563C1015.699%2c646.527%2c1060.793%2c628.183%2c1081.158%2c589.604C1100.553%2c552.862%2c1083.656%2c510.201%2c1061.649%2c474.961C1041.258%2c442.309%2c1010.615%2c414.957%2c972.119%2c415.003C933.69%2c415.049%2c901.827%2c441.695%2c882.961%2c475.175C864.476%2c507.978%2c861.331%2c547.17%2c878.869%2c580.489C897.697%2c616.259%2c931.738%2c642.743%2c972.119%2c644.563' fill='rgba(11%2c 13%2c 12%2c 0.33)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M903.5195847648736-72.52113655429093L800.4698772481577 59.376474281673836 932.3674880841224 162.42618179838973 1035.4171956008383 30.52857096242498z' fill='rgba(11%2c 13%2c 12%2c 0.33)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M1083.333861003911 207.76044720694136L1168.7595147787893 290.25504213789685 1251.2541097097449 204.82938836301844 1165.8284559348663 122.33479343206295z' fill='rgba(11%2c 13%2c 12%2c 0.33)' class='triangle-float2'%3e%3c/path%3e%3cpath d='M377.994%2c237.27C434.494%2c237.511%2c486.611%2c204.17%2c512.373%2c153.884C536.191%2c107.392%2c524.018%2c52.192%2c495.095%2c8.692C469.34%2c-30.043%2c424.507%2c-47.684%2c377.994%2c-48.222C330.346%2c-48.773%2c282.321%2c-33.863%2c256.104%2c5.928C227.171%2c49.841%2c221.07%2c106.223%2c245.583%2c152.748C271.744%2c202.4%2c321.873%2c237.031%2c377.994%2c237.27' fill='rgba(11%2c 13%2c 12%2c 0.33)' class='triangle-float3'%3e%3c/path%3e%3cpath d='M848.6702915923031 515.0134112820984L921.6647389960825 658.273080600299 1064.924408314283 585.2786331965195 991.9299609105036 442.018963878319z' fill='rgba(11%2c 13%2c 12%2c 0.33)' class='triangle-float1'%3e%3c/path%3e%3cpath d='M416.36 338.5 a105.01 105.01 0 1 0 210.02 0 a105.01 105.01 0 1 0 -210.02 0z' fill='rgba(11%2c 13%2c 12%2c 0.33)' class='triangle-float1'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1881'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3clinearGradient x1='84.72%25' y1='-39.29%25' x2='15.28%25' y2='139.29%25' gradientUnits='userSpaceOnUse' id='SvgjsLinearGradient1882'%3e%3cstop stop-color='rgba(114%2c 114%2c 114%2c 1)' offset='0.63'%3e%3c/stop%3e%3cstop stop-color='rgba(114%2c 114%2c 114%2c 1)' offset='1'%3e%3c/stop%3e%3c/linearGradient%3e%3cstyle%3e %40keyframes float1 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-10px%2c 0)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float1 %7b animation: float1 5s infinite%3b %7d %40keyframes float2 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(-5px%2c -5px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float2 %7b animation: float2 4s infinite%3b %7d %40keyframes float3 %7b 0%25%7btransform: translate(0%2c 0)%7d 50%25%7btransform: translate(0%2c -10px)%7d 100%25%7btransform: translate(0%2c 0)%7d %7d .triangle-float3 %7b animation: float3 6s infinite%3b %7d %3c/style%3e%3c/defs%3e%3c/svg%3e");
+}
+.footer{
+    
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.nav h1{
+    font-size: 26px;
+    margin: 20px auto;
+    text-transform: uppercase;
+    font-weight: 900;
+    color: white;
+}
+.col h1{
+    margin: 10px 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    font-size: 24px;
+    color: white;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    height: 115vh;
+    margin: 50px 10px;
+    box-shadow: 0 8px 32px 0 rgba(198, 199, 207, 0.37);
+    backdrop-filter: blur( 10px );
+    -webkit-backdrop-filter: blur( 10px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    background-color: #ffffff10;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+   
+    
+    
+}
+.pagination{
+    background-color: transparent;
+    color: #17171f;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+.col{
+   
+    max-width: 800px;
+    justify-content: space-around;
+    padding: 70px 70px;
+}
+
+
+.col img{
+  height: 500px;
+  width: 100%;
+  border-radius: 30% 70% 70% 30% / 31% 59% 41% 69%;
+  padding: 10px 40px;
+  margin: 50px auto;
+  border: 2px solid #0d6efd;
+
+ 
+}
+
+@media(max-width:1000px){
+    .nav h1{
+        font-size: 18px;
+        margin: 20px auto;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: white;
+    }
+    .col h1{
+        margin: 5px 10px;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 16px;
+        color: white;
+    }
+    .col{
+   
+        max-width: 1000px;
+        justify-content: space-around;
+        padding: 70px 70px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        height: 105vh;
+        margin: 50px 10px;
+        box-shadow: 0 8px 32px 0 rgba(198, 199, 207, 0.37);
+        backdrop-filter: blur( 10px );
+        -webkit-backdrop-filter: blur( 10px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        background-color: #ffffff10;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        
+       
+    }
+    .col img{
+        height: 500px;
+        width: 100%;
+        border-radius: 30% 70% 70% 30% / 31% 59% 41% 69%;
+        padding: 10px 40px;
+        margin: 50px auto;
+        border: 2px solid #0d6efd;
+      
+       
+      }
+      p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 12px;
+        color: white;
+        align-items: center;
+        margin: 10px 10px;
+    }
+    .nav ul{
+        font-size: 12px;
+    }
+}
+
+@media(max-width:800px){
+    .nav h1{
+        font-size: 14px;
+        margin: 20px auto;
+        text-transform: uppercase;
+        font-weight: 900;
+        color: white;
+    }
+    .col h1{
+        margin: 5px 10px;
+        text-transform: uppercase;
+        font-weight: 800;
+        font-size: 12px;
+        color: white;
+    }
+    .col{
+   
+        max-width: 800px;
+        justify-content: space-around;
+        padding: 70px 70px;
+    }
+    .container{
+        display: flex;
+        justify-content: center;
+        height: 110vh;
+        margin: 50px 30px;
+        box-shadow: 0 8px 32px 0 rgba(198, 199, 207, 0.37);
+        backdrop-filter: blur( 10px );
+        -webkit-backdrop-filter: blur( 10px );
+        border-radius: 10px;
+        border: 1px solid rgba( 255, 255, 255, 0.18 );
+        background-color: #ffffff10;
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+        
+       
+    }
+    .col img{
+        height: 500px;
+        width: 100%;
+        border-radius: 30% 70% 70% 30% / 31% 59% 41% 69%;
+        padding: 10px 40px;
+        margin: 50px auto;
+        border: 2px solid #0d6efd;
+        display: flex;
+        justify-content: center;
+       
+      }
+      p {
+        font-family: 'Raleway', sans-serif;
+        font-weight: 600;
+        font-size: 10px;
+        color: white;
+        align-items: center;
+        margin: 10px 10px;
+    }
+    .nav ul{
+        font-size: 10px;
+    }
+}
+
+

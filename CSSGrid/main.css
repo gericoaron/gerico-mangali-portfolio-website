@@ -1,0 +1,125 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+    background-color: aquamarine;
+}
+
+body{
+    font-family: 'Poppins',sans-serif;
+    background-color: burlywood;
+    color: white;
+    font-weight: 100;
+    line-height: 1.5;
+}
+header{
+    grid-area: header;
+}
+
+nav{
+    grid-area: nav;
+    
+}
+
+.login{
+    grid-area: login;
+    margin-bottom: 100px;
+}
+
+.enhance{
+    grid-area: enhance;
+    background-color: red;
+}
+
+.important{
+    grid-area: important;
+    background-color: blue;
+}
+
+.apps{
+    grid-area: apps;
+    background-color: green;
+}
+
+.websites{
+    grid-area: websites;
+    background-color: yellow;
+}
+
+.games{
+    grid-area: games;
+    background-color: orange;
+}
+
+footer{
+    grid-area: footer;
+    background-color: cornflowerblue;
+}
+
+@media screen and (min-width:1100px){
+    main{
+        width: 90%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10vh 4vh 25vh 25vh 25vh 10vh;
+        grid-gap: 15px;
+        margin: 0 auto;
+    }
+    
+    .container{
+        grid-template-areas: 
+            "header header"
+            "nav nav"
+            "login enhance"
+            "important apps"
+            "websites games"
+            "footer footer"
+    }
+}
+
+@media screen and (max-width:1100px){
+    main{
+        width: 90%;
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 10vh 4vh 25vh 25vh 25vh 10vh;
+        grid-gap: 15px;
+        margin: 0 auto;
+    }
+    
+    .container{
+        grid-template-areas: 
+            "header header"
+            "nav nav"
+            "login enhance"
+            "important apps"
+            "websites games"
+            "footer footer"
+    }
+}
+
+@media screen and (max-width:500px){
+    main{
+        width: 90%;
+        max-width: 800px;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 10vh 6vh 14h 14vh 14vh 14vh 14vh 14vh 5vh;
+        grid-gap: 15px;
+        margin: 0 auto;
+    }
+    
+    .container{
+        grid-template-areas: 
+            "header"
+            "nav"
+            "login"
+            "enhance"
+            "important" 
+            "apps"
+            "websites" 
+            "games"
+            "footer"
+    }
+}
